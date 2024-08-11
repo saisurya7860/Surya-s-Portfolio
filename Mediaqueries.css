@@ -1,7 +1,5 @@
 @media (max-width:992px){
-    header{
-        position:relative;
-    }
+  
     .navlinks{
        position: absolute;
        top:100%;
@@ -11,19 +9,25 @@
        height: 0;
        left:0;
        overflow: hidden;
-       background-color:rgba(240, 238, 245, 0.4);
+       background-color:rgba(143, 118, 212, 0.4);
     }
     .navlinks ul{
         display: block;
         text-align: center; 
-        opacity: 0;
-      
+        opacity: 0; 
     }
-
+    .home-li:hover #home-li{
+        color: #fff;
+    }
+    #nav-ele:hover{
+        color:#fff;
+    }
+    #nav-ele:active{
+        color:#fff;
+    }
     .navlinks.active{
         height:300px;
     }
-    
     
     .navlinks.active ul{
         opacity: 1;
@@ -35,10 +39,22 @@
         padding:1rem 0;
     }
     .navlinks li:hover{
-        background: linear-gradient(to bottom right, #6e57e0, white);
+        background: #6e57e0;
     }
 
+    /* Profile Section */
+   .profile-pic{
+    width: 220px;
+   }
+   .icon-container{
+    padding-left: 1rem;
+   }
 
+   /* about section */
+   .about{
+
+   }
+   
     /* sKILL SECTION */
     .skillcontent{
         display: flex;
@@ -59,50 +75,43 @@
 
 @media (max-width:1024px){
 
-  #profile .profile-pic{
+  .profile-pic{
     width:250px;
   }
-  .profile{
-    padding:0 3rem;
-  }
 
-
-  /* About section */
-  .about{
-    padding:0 3rem;
-  }
   .about-pic{
-    width:260px
+    width:270px
   }
 }
 
 @media (max-width:768px){
+    /* Profile content */
+ 
     .profile{
         flex-direction: column;
-        justify-content: center;
-        align-items: center; 
+        padding-top:4rem ;
     }
- 
-   .profile .icon{
-    order: 1;
+    .profile-pic-div{
+        order: 0;
     }
-
-    .icon i{
-    padding: 0 1rem;    
-    }
-
-    .profile-pic{
-        width:200px;
-    }
-
-    .profile .profile-des{
+    .icon-container{
         order:1;
+        flex-direction:row;
     }
-
     .profile-des{
-        padding:0 2.5rem;
-        justify-content: center;
+        order:2;
+    }
+    .profile-des h1,.role{
         text-align: center;
+    }
+    .profile-des p{
+        max-width: none;
+        text-align: center;
+    }
+    .resume-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* About-section */
@@ -131,12 +140,13 @@
         font-weight: var(--bold-size);
     }
     .profile {
-        padding: 2rem 0;
+        padding:4rem 0;
     }
 
     /* About-section */
-
-
+    .description{
+        padding:1.5rem;
+    }
     .total-cards{
         width:85%;  
     }
@@ -172,13 +182,13 @@
 
     /* Skill section */
     .skillcard{
-        width:80%;
+        width:85%;
     }
 
     /* Project section */
 
     .project-card{
-        max-width:75%;
+        max-width:85%;
     }
     .project-img{
         width:100%;

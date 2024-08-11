@@ -7,6 +7,9 @@
     --form-color:#f0eefc;
     --white:#fff;
     --black:#000;
+
+    /* header height */
+    --header-height:3rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -17,7 +20,7 @@
     --big-font:2.2rem;
     --medium-font:1.5rem;
     --small-font:1rem;
-    --normal-font:1.2rem;
+    --normal-font:1.1rem;
     --ex-small-font:0.9rem;
     --h1-font:3rem;
     --h2-font:2.5rem;
@@ -64,7 +67,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    height:9dvh;
+    height:70px;
 }
 
 .container{
@@ -87,6 +90,10 @@ nav{
     gap: 2rem;
 }
 
+#home-li{
+    color:var(--primary-color);
+}
+
 .navlinks ul li a{
     color:#000;
     font-size: var(--small-font);
@@ -103,29 +110,35 @@ nav{
 
 /* Profile section */
 
+section{
+    padding: 4rem 1.5rem;
+}
 
 .profile{
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
+    gap:5.5rem;
+    min-height:100dvh;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     gap:2rem;
-    min-height:120dvh;
-}
-
-.icon{
-    padding-right: 2rem;
-}
-
-.icon i{
-    padding-bottom:3rem;
 }
 
 .profile-des p{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    font-size: var(--normal-font);
     color:var(--para-color);
-    line-height:1.5rem;
+    line-height:1.7rem;
     text-align: justify;
+    max-width: 380px;
 }
+
+
 
 .profile-des button{
     padding: 1.5rem 2rem;
@@ -138,6 +151,7 @@ nav{
     cursor: pointer;
 }
 
+
 .profile-des button:hover{
     background-color: var(--hover-btn-color);
 }
@@ -146,6 +160,7 @@ nav{
     font-size: var(--h1-font);
     font-weight: var(--bold-size);
     padding-bottom:0.1rem;
+    text-wrap:nowrap;
 }
 
 .profile-des .role{
@@ -154,19 +169,35 @@ nav{
     line-height:2.5;
 }
 
-
-
-.hero-info{
+.profile-pic-div{
     display: flex;
-    gap:2rem;
-    align-items: center;
+    justify-content: center;
+    align-items:center;
 }
 
 .profile-pic{
-    width:280px;
-    border-radius:50%;
+    width:300px;
+    height:300px;
+    background-position: 50%;
+    box-shadow: 0 0 0 9px #846cff90;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    animation:animatepic 8s ease-in-out infinite;
 } 
 
+@keyframes animatepic {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    
+}
 
 /* About Section */
 .title{
@@ -186,8 +217,10 @@ nav{
 
 .about-contents{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap:4rem;
-    padding: 3rem 1rem;
+    padding: 6rem 1rem;
 }
 
 .about-contents-info{
@@ -199,7 +232,7 @@ nav{
 }
 
 .about-pic{
-    width:350px;
+    width:300px;
     border-radius: 30px;
 }
 
@@ -215,15 +248,17 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
     border:1px solid var(--border-color);
    border-radius: 20px;
 }
 
 .description{
-    color: var(--para-color);
+    font-size: var(--normal-font);
+    color:var(--para-color);
+    line-height:1.7rem;
     text-align: justify;
-    line-height: 1.5;
+    max-width: 350px;
 }
 
 /*Skills Section*/
@@ -233,8 +268,7 @@ nav{
     align-items: center;
     justify-content: center;
     gap:3rem;
-    padding:5rem 0;
-    min-height: 70dvh;
+    min-height: 90dvh;
 }
 
 .skillcard{
@@ -242,14 +276,14 @@ nav{
     width:370px;;
     border-radius: 25px;
     background-color:#fff;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--primary-color);
     transition: margin ease-in-out 1s;
     cursor: pointer;
 }
 
 .skillcard:hover{
     margin-top:10px;
-    box-shadow:2px 2px 7px 1px rgba(0,0,0,0.5);
+    box-shadow:2px 2px 7px 1px var(--primary-color);
 
 }
 
@@ -271,6 +305,11 @@ nav{
     gap:2rem;
 }
 
+.AIML-icons{
+    width: 25px;
+}
+
+
 .skill{
     display: flex;
     align-items: center;
@@ -281,26 +320,27 @@ nav{
 
 .project-content{
     display:grid;
-    padding :7rem 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     place-items: center;
-  
+    padding: 3rem 0;
 }
 
 .project-card{
     width:300px;
-    height:460px;
+    height:470px;
     border-radius: 10px;
     background-color:#fff ;
     padding:1rem;
     border: 1px solid var(--border-color);
     cursor: pointer;
+    transition: box-shadow ease-in-out 0.5s;
+    border: var(--primary-color) solid 1px;
 }
 
 .project-card:hover{
     margin-top:2px;
-    box-shadow:2px 2px 7px 1px rgba(0,0,0,0.5);
+    box-shadow:2px 2px 7px 1px var(--primary-color);
 }
 
 
@@ -423,7 +463,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding:7rem 0;
+    padding:4rem 0;
 }
 
 .contact-left-sec{
@@ -470,6 +510,17 @@ nav{
 
 .contact-input{
     width:100%;
+    max-width: 250px;
+    max-height:130px;
+    font-size: var(--small-font );
+    background-color: var(--form-color); 
+    border: none;
+    outline: none;    
+}
+.txt-box{
+    width:100%;
+    max-width: 250px;
+    max-height:130px;
     font-size: var(--small-font );
     background-color: var(--form-color); 
     border: none;
