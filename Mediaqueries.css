@@ -9,7 +9,9 @@
        height: 0;
        left:0;
        overflow: hidden;
-       background-color:rgba(157, 157, 157, 0.3);
+       background-color:rgba(231, 231, 231, 0.3);
+       /* background-color:#fff; */
+       border-bottom:5px solid var(--primary-color) ;
     }
     .navlinks ul{
         display: block;
@@ -92,7 +94,10 @@
 
 @media (max-width:768px){
     /* Profile content */
- 
+
+    .profile-pic{
+        width:200px;
+      }
     .profile{
         flex-direction: column;
         padding-top:4rem ;
