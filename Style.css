@@ -207,7 +207,7 @@ section{
 }
 
 .about{
-    min-height:90dvh;
+    min-height:70dvh;
 }
 
 .subtitle{
@@ -220,7 +220,8 @@ section{
     justify-content: space-around;
     align-items: center;
     gap:4rem;
-    padding: 6rem 1rem;
+    padding: 3rem 1rem;
+    min-height: 70dvh;
 }
 
 .about-contents-info{
@@ -268,7 +269,8 @@ section{
     align-items: center;
     justify-content: center;
     gap:3rem;
-    min-height: 90dvh;
+    min-height: 70dvh;
+    padding: 2rem 1rem;
 }
 
 .skillcard{
@@ -323,7 +325,7 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     place-items: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .project-card{
@@ -405,8 +407,9 @@ section{
 .qualification-content{
     display: flex;
     flex-direction: column;
+    min-height: 50dvh;
     align-items: center;
-    padding:5rem 1rem;
+    padding:2rem 1rem;
 }
 
 .qualify-tot-datas{
@@ -463,7 +466,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding:4rem 0;
+    padding:3rem 0;
 }
 
 .contact-left-sec{

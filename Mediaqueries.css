@@ -9,14 +9,20 @@
        height: 0;
        left:0;
        overflow: hidden;
-       background-color:rgba(143, 118, 212, 0.4);
+       background-color:rgba(157, 157, 157, 0.3);
     }
     .navlinks ul{
         display: block;
         text-align: center; 
         opacity: 0; 
     }
-    .home-li:hover #home-li{
+    #home-li{
+        color: #000000;
+    }
+    #home-li:hover{
+        color:#fff;
+    }
+    #home-li:active{
         color: #fff;
     }
     #nav-ele:hover{
@@ -26,7 +32,7 @@
         color:#fff;
     }
     .navlinks.active{
-        height:300px;
+        height:280px;
     }
     
     .navlinks.active ul{
@@ -90,6 +96,7 @@
     .profile{
         flex-direction: column;
         padding-top:4rem ;
+        gap:2.5rem;
     }
     .profile-pic-div{
         order: 0;
