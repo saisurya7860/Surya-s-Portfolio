@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style-modal.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="project-card">
+        <img class="project-img" src="assets/chatsoc.jpeg" alt="">
+        <div class="project-des">
+            <h3>ChatSoC</h3>
+            <p class="project-duration">March 2023 - May 2023</p>
+            <p class="project-info">Developed 'ChatSoC' an advanced chatbot using OpenAI's API in Python.</p>
+        </div>
+        <div class="project-view">
+            <button modal-open-btn="#modalcard" class="view">View Project</button>
+        </div>
+    </div> <!--project card-->
+
+    <div id="modalcard">
+        <div class="close-btn-div"> 
+            <button modal-close-btn class="close-btn">&times;</button>
+        </div>
+        <div>
+            <img class="pro-img" src="assets/chatsoc.jpeg" alt="">
+        </div>
+
+        <!-- image of project -->
+        <div class="modal-project-infos">
+            <h1>CHATSoC</h1>
+            <div>MARCH 2023 - MAY 2023</div>
+            <div class="tech-used">  
+               <div>Python</div>
+               <div>NLP</div>
+               <div>ML</div>
+               <div>API</div>  
+               <div>OpenAI</div>  
+            </div>
+            <p>Developed 'ChatSoC,' an advanced chatbot using OpenAI's API in Python, featuring capabilities such as text-to-voice output, voice-to-text input, QR login mechanism using OpenCV, AI image generation with DALL-E, YouTube video downloading, and Wikipedia content referencing.
+            </p> 
+        </div>
+        <!--Project-info-->
+
+        <div>
+            <h2 id="title-mem">Members</h2>
+            
+            <div class="members">
+                <img id="contributors-img" src="assets/profile .jpg" alt="">
+                <div class="member-id">
+                    <h3>Surya B</h3>
+                    <a href=""><i class="fa-brands fa-github fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="members">
+                <img id="contributors-img" src="assets/profile .jpg" alt="">
+                <div class="member-id">
+                    <h3>Surya B</h3>                    
+                    <a href=""><i class="fa-brands fa-github fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="members">
+                <img id="contributors-img" src="assets/profile .jpg" alt="">
+                <div class="member-id">
+                    <h3>Surya B</h3>                    
+                    <a href=""><i class="fa-brands fa-github fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="members">
+                <img id="contributors-img" src="assets/profile .jpg" alt="">
+                <div class="member-id">
+                    <h3>Surya B</h3>                    
+                    <a href=""><i class="fa-brands fa-github fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="members">
+                <img id="contributors-img" src="assets/profile .jpg" alt="">
+                <div class="member-id">
+                    <h3>Surya B</h3>                    
+                    <a href=""><i class="fa-brands fa-github fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in fa-lg fa-beat" style="color: #6e57e0;"></i></a>
+                </div>
+                
+            </div>
+
+        </div>
+        <!--Contributors-->
+
+        <div class="project-link">
+            <button class="view-code">View Code</button>
+        </div>
+
+    </div> <!--Modal card-->
+
+    <div id="overlay">
+
+    </div>
+
+</body>
+<script src="modal.js">
+
+</script>
+</html>

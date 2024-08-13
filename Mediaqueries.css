@@ -1,0 +1,250 @@
+@media (max-width:992px){
+  
+    .navlinks{
+       position: absolute;
+       top:100%;
+       width:100vw;
+       z-index: 1000;
+       right:0;
+       height: 0;
+       left:0;
+       overflow: hidden;
+       background-color:rgba(231, 231, 231, 0.3);
+       /* background-color:#fff; */
+       border-bottom:5px solid var(--primary-color) ;
+    }
+    .navlinks ul{
+        display: block;
+        text-align: center; 
+        opacity: 0; 
+    }
+    #home-li{
+        color: #000000;
+    }
+    #home-li:hover{
+        color:#fff;
+    }
+    #home-li:active{
+        color: #fff;
+    }
+    #nav-ele:hover{
+        color:#fff;
+    }
+    #nav-ele:active{
+        color:#fff;
+    }
+    .navlinks.active{
+        height:280px;
+    }
+    
+    .navlinks.active ul{
+        opacity: 1;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .navlinks ul li{
+        padding:1rem 0;
+    }
+    .navlinks li:hover{
+        background: #6e57e0;
+    }
+
+    /* Profile Section */
+   .profile-pic{
+    width: 220px;
+   }
+   .icon-container{
+    padding-left: 1rem;
+   }
+
+   /* about section */
+   .about{
+
+   }
+   
+    /* sKILL SECTION */
+    .skillcontent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* projects section */
+    .project-content{
+        grid-template-columns: 1fr 1fr;
+        gap:2rem;   
+    }
+
+    .project-content.project{
+        place-self: center;
+    }
+}
+
+
+@media (max-width:1024px){
+
+  .profile-pic{
+    width:250px;
+  }
+
+  .about-pic{
+    width:270px
+  }
+}
+
+@media (max-width:768px){
+    /* Profile content */
+
+    .profile-pic{
+        width:200px;
+      }
+    .profile{
+        flex-direction: column;
+        padding-top:4rem ;
+        gap:2.5rem;
+    }
+    .profile-pic-div{
+        order: 0;
+    }
+    .icon-container{
+        order:1;
+        flex-direction:row;
+    }
+    .profile-des{
+        order:2;
+    }
+    .profile-des h1,.role{
+        text-align: center;
+    }
+    .profile-des p{
+        max-width: none;
+        text-align: center;
+    }
+    .resume-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* About-section */
+    .about-contents{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* projectsection */
+    .project-content{
+        grid-template-columns:1fr;
+        gap:2rem;   
+    }
+
+    /* Qualification Section */
+    .qualification-content{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+@media (max-width:576px){
+    .profile-des h1{
+        font-size: var(--h2-font);
+        font-weight: var(--bold-size);
+    }
+    .profile {
+        padding:4rem 0;
+    }
+
+    /* About-section */
+    .description{
+        padding:1.5rem;
+    }
+    .total-cards{
+        width:85%;  
+    }
+
+    /* Contact me */
+    .contact-content{
+        flex-direction: column;
+        gap:4rem;
+    }
+    
+  
+
+}
+
+
+
+@media (max-width:375px){
+    .profile-des h1{
+        font-size: var(--big-font);
+        font-weight: var(--bold-size);
+    }
+    .profile-pic{
+        width:200px;
+    }
+
+    /* About */
+
+    .total-cards{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        justify-content: center;
+    }
+
+    /* Skill section */
+    .skillcard{
+        width:85%;
+    }
+
+    /* Project section */
+
+    .project-card{
+        max-width:85%;
+    }
+    .project-img{
+        width:100%;
+        margin:0 0 1rem;
+    }
+    .footer-content{
+        padding:0 1rem;
+    }
+}
+
+
+
+
+
+
+/* 
+Breakpoints :
+
+1024
+768
+425
+375
+320 */
+
+
+
+
+/* 
+    nav .navlinks{
+      position:absolute;
+      top: 60px;
+      width:100vw;
+      height:0;
+      background-color:rgba(199, 49, 49, 0.3);
+      display: block;
+      text-align: center;
+      transition: 0.2s;
+      overflow: hidden;
+      opacity: 0;
+    }
+    .navlinks.active{
+        opacity:1;
+        height: 350px;
+    }
+    .navlinks li:hover{
+        background: linear-gradient(to bottom right, #6e57e0, white);
+    } */
