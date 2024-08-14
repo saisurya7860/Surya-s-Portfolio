@@ -9,7 +9,7 @@
        height: 0;
        left:0;
        overflow: hidden;
-       background-color:rgba(231, 231, 231, 0.3);
+       background-color:#fff;
        /* background-color:#fff; */
        border-bottom:5px solid var(--primary-color) ;
     }
