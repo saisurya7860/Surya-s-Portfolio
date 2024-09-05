@@ -51,10 +51,10 @@
     width: 200px;
     height:200px;
    }
-
-   .profile-pic-div{
-    padding-right:1.2rem;
+   .profile{
+    gap:4rem;
    }
+
 
    .icon-container{
     padding-left: 1rem;
@@ -101,7 +101,6 @@
       }
     .profile{
         flex-direction: column;
-        padding-top:4rem ;
         gap:2.5rem;
         padding-top:8rem;
     }
