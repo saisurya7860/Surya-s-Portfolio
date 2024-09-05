@@ -1,7 +1,9 @@
 :root{
     --bg-color:#fbfbfe;
     --primary-color:#6e57e0;
-    --hover-btn-color:#5a43cb;
+    --primary-color:rgb(58, 137, 255);
+    --primary-color1:rgba(32, 118, 247, 0.945);
+    --hover-btn-color:rgb(70, 117, 237);
     --para-color:#6d6a7c;
     --border-color:#ece6e6;
     --form-color:#f0eefc;
@@ -45,6 +47,7 @@ html{
 }
 body{
     background-color:var(--bg-color);
+    background-color:#f8f9fa;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -81,7 +84,7 @@ nav{
 }
 
 .logo:hover{
-    color: var(--primary-color);
+    color: var(--primary-color1);
     cursor: pointer;
 }
 
@@ -91,7 +94,7 @@ nav{
 }
 
 #home-li{
-    color:var(--primary-color);
+    color:var(--primary-color1);
 }
 
 .navlinks ul li a{
@@ -101,7 +104,7 @@ nav{
 }
 
 .navlinks ul li a:hover{
-    color:var(--primary-color);
+    color:var(--primary-color1);
 }
 
 .hamburger{
@@ -119,8 +122,10 @@ section{
     justify-content: center;
     align-items: center;
     gap:5.5rem;
-    min-height:100dvh;
+    padding: 8rem 0 0 0 ;
 }
+
+
 
 .icon-container{
     display: flex;
@@ -138,13 +143,11 @@ section{
     max-width: 380px;
 }
 
-
-
 .profile-des button{
     padding: 1.5rem 2rem;
     border-radius:10px;
     border:none;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color1);
     font-size:var(--small-font);
     font-weight: var(--bold-size);
     color:#fff;
@@ -163,6 +166,10 @@ section{
     text-wrap:nowrap;
 }
 
+.profile-des h1 span{
+    color:var(--bt-color);
+}
+
 .profile-des .role{
     font-size: var(--medium-font);
     font-weight: var(--bold-size);
@@ -176,10 +183,10 @@ section{
 }
 
 .profile-pic{
-    width:330px;
-    height:330px;
+    width:300px;
+    height:300px;
     background-position: 50%;
-    box-shadow: 0 0 0 9px #846cff90;
+    box-shadow: 0 0 0 9px rgba(27, 112, 240, 0.575);
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     animation:animatepic 8s ease-in-out infinite;
 } 
@@ -235,7 +242,7 @@ section{
 .about-pic{
     width:300px;
     object-fit: cover;
-
+    border:1px solid var(--border-color);
     border-radius: 30px;
 }
 
@@ -271,7 +278,7 @@ section{
     align-items: center;
     justify-content: center;
     gap:3rem;
-    min-height: 70dvh;
+    min-height: 60dvh;
     padding: 2rem 1rem;
 }
 
@@ -280,15 +287,14 @@ section{
     width:370px;;
     border-radius: 25px;
     background-color:#fff;
-    border: 1px solid var(--primary-color);
+    border:1px solid var(--primary-color1);
     transition: margin ease-in-out 1s;
     cursor: pointer;
 }
 
 .skillcard:hover{
     margin-top:10px;
-    box-shadow:2px 2px 7px 1px var(--primary-color);
-
+    box-shadow: 1px 1px 10px rgba(78, 144, 242, 0.575);
 }
 
 .skill-title{
@@ -328,31 +334,31 @@ section{
     align-items: center;
     place-items: center;
     padding: 2rem 0;
+    min-height: 70dvh;   
 }
 
 .project-card{
     width:300px;
     height:470px;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color:#fff ;
-    padding:1rem;
     border: 1px solid var(--border-color);
     cursor: pointer;
-    transition: box-shadow ease-in-out 0.5s;
-    border: var(--primary-color) solid 1px;
+    transition: margin ease-in-out 0.35s;
+    padding:1rem;
 }
 
 .project-card:hover{
-    margin-top:2px;
-    box-shadow:2px 2px 7px 1px var(--primary-color);
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px rgba(78, 144, 242, 0.575);
 }
 
 
 .project-img{
     width:268px;
-    border-radius:10px;
+    border-radius:30px;
     height:13rem;
-    border: 1px solid #000;
+    border:1px solid var(--border-color);
     object-position:cover;
 }
 
@@ -367,8 +373,9 @@ section{
 }
 
 .project-info{
-    font-weight: var(--medium-size);
-    font-size: var(--small-font);
+    font-weight: 400;
+    font-size:15px;
+    color: var(--para-color);
     text-align:start;
     line-height:23px;
 }
@@ -376,6 +383,7 @@ section{
 .git-butn{
     display: flex;
     justify-content: center;
+    padding-top: 0.5rem;
 }
 
 .gitrepo{
@@ -386,7 +394,7 @@ section{
     display: flex;
     border-radius: 20px;
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color1);
     justify-content: center;
     cursor: pointer;
 }
@@ -452,13 +460,13 @@ section{
     border-radius:50%;
     transform: translate(8px);
     height: 15px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color1);
 }
 
 .qualify-line{
     min-height: 100px;
     width: 1px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color1);
 }
 
 /* Contact Section */
@@ -535,7 +543,7 @@ section{
 /* Footer-section */
 
 footer{
-    background-color:var(--primary-color);
+    background-color:var(--primary-color1);
     max-width:100%;
     min-height: 30vh;
     padding: 2rem 0;

@@ -9,11 +9,16 @@
        height: 0;
        left:0;
        overflow: hidden;
-       background-color:#fff;
-       /* background-color:#fff; */
-       border-bottom:5px solid var(--primary-color) ;
-       border-top:1px solid #d5cccc;
+       background-color:rgba(255,255,255,0.8);
+       border-radius: 0 0 25px 25px;
+       border-top:0.5px solid #d5cccc;
+       border-bottom: 1px solid #918c8c;
     }
+    
+    #nav-links ul li a:hover {
+        color: var(--primary-color);
+    }
+ 
     .navlinks ul{
         display: block;
         text-align: center; 
@@ -23,16 +28,16 @@
         color: #000000;
     }
     #home-li:hover{
-        color:#fff;
+        color:var(--primary-color);
     }
     #home-li:active{
-        color: #fff;
+        color:var(--primary-color);
     }
     #nav-ele:hover{
-        color:#fff;
+        color:var(--primary-color);
     }
     #nav-ele:active{
-        color:#fff;
+        color:var(--primary-color);
     }
     .navlinks.active{
         height:280px;
@@ -48,21 +53,24 @@
         padding:1rem 0;
     }
     .navlinks li:hover{
-        background: #6e57e0;
+        color:var(--primary-color);
     }
 
     /* Profile Section */
    .profile-pic{
-    width: 220px;
+    width: 200px;
+    height:200px;
    }
+
+   .profile-pic-div{
+    padding-right:1.2rem;
+   }
+
    .icon-container{
     padding-left: 1rem;
    }
 
    /* about section */
-   .about{
-
-   }
    
     /* sKILL SECTION */
     .skillcontent{
@@ -86,6 +94,7 @@
 
   .profile-pic{
     width:250px;
+    height: 250px;
   }
 
   .about-pic{
@@ -97,12 +106,14 @@
     /* Profile content */
 
     .profile-pic{
-        width:200px;
+        width:250px;
+        height:250px;
       }
     .profile{
         flex-direction: column;
         padding-top:4rem ;
         gap:2.5rem;
+        padding-top:8rem;
     }
     .profile-pic-div{
         order: 0;
@@ -153,7 +164,12 @@
         font-weight: var(--bold-size);
     }
     .profile {
-        padding:4rem 0;
+        padding:8rem 0;
+    }
+
+    .profile-pic{
+        width:250px;
+        height: 250px;
     }
 
     /* About-section */
@@ -181,9 +197,7 @@
         font-size: var(--big-font);
         font-weight: var(--bold-size);
     }
-    .profile-pic{
-        width:200px;
-    }
+
 
     /* About */
 
@@ -195,13 +209,13 @@
 
     /* Skill section */
     .skillcard{
-        width:85%;
+        width:100%;
     }
 
     /* Project section */
 
     .project-card{
-        max-width:85%;
+        max-width:100%;
     }
     .project-img{
         width:100%;
