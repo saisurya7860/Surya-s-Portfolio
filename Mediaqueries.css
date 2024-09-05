@@ -18,33 +18,23 @@
     #nav-links ul li a:hover {
         color: var(--primary-color);
     }
- 
+    
+
     .navlinks ul{
         display: block;
         text-align: center; 
         opacity: 0; 
     }
-    #home-li{
-        color: #000000;
-    }
-    #home-li:hover{
-        color:var(--primary-color);
-    }
-    #home-li:active{
-        color:var(--primary-color);
-    }
+
     #nav-ele:hover{
         color:var(--primary-color);
     }
-    #nav-ele:active{
-        color:var(--primary-color);
-    }
     .navlinks.active{
-        height:280px;
+        height:270px;
     }
     
     .navlinks.active ul{
-        opacity: 1;
+        opacity:1;
     }
     .hamburger{
         display: flex;
@@ -174,7 +164,7 @@
 
     /* About-section */
     .description{
-        padding:1.5rem;
+        padding:1rem;
     }
     .total-cards{
         width:85%;  

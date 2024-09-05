@@ -1,9 +1,9 @@
 :root{
     --bg-color:#fbfbfe;
-    --primary-color:#6e57e0;
     --primary-color:rgb(58, 137, 255);
     --primary-color1:rgba(32, 118, 247, 0.945);
     --hover-btn-color:rgb(70, 117, 237);
+    --footer-color:rgb(13, 110, 253);
     --para-color:#6d6a7c;
     --border-color:#ece6e6;
     --form-color:#f0eefc;
@@ -227,7 +227,7 @@ section{
     justify-content: space-around;
     align-items: center;
     gap:4rem;
-    padding: 3rem 1rem;
+    padding: 3rem 0.5rem;
     min-height: 70dvh;
 }
 
@@ -267,7 +267,7 @@ section{
     font-size: var(--normal-font);
     color:var(--para-color);
     line-height:1.7rem;
-    text-align: justify;
+    text-align: center;
     max-width: 350px;
 }
 
@@ -543,10 +543,11 @@ section{
 /* Footer-section */
 
 footer{
-    background-color:var(--primary-color1);
+    background-color:var(--white);
     max-width:100%;
-    min-height: 30vh;
+    min-height: 25vh;
     padding: 2rem 0;
+    border:1px solid var(--border-color);
 }
 
 .footer-content{
@@ -554,6 +555,21 @@ footer{
     row-gap:2.5rem;
     padding:0 1rem;
     grid-template-rows: 1fr 1fr fit-content;
+    justify-content: center;
+}
+
+.logo-div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.logo-div img{
+    background-color: #fff;
+}
+
+.app-logo{
+    width:150px;
+    
 }
 
 .footer-myname{
@@ -564,13 +580,17 @@ footer{
 }
 
 .footer-name{
-    color: #fff;
+    color: var(--black);
     font-size: var(--big-font);
     font-weight: var(--semi-bold-size);
 }
 
+.footer-name:hover{
+    color: var(--primary-color1);
+}
+
 .footer-role{
-    color: #fff;
+    color:var(--black);
     font-size: var(--normal-font);
 }
 
@@ -581,8 +601,12 @@ footer{
 }
 
 .footer-nav-scroll a{
-    color: #fff;
+    color: var(--black);
     font-size: var(--normal-font);
+}
+
+.footer-nav-scroll a:hover{
+    color:var(--primary-color1);
 }
 
 .footer-social-link{
@@ -590,8 +614,11 @@ footer{
     gap: 1.5rem;
     justify-content: center;
 }
+#footer-icon:hover{
+    color:var(--primary-color);
+}
 .copyright{
-    color: #bbbfdc;
+    color:var(--black);
     font-size: var(--ex-small-font);
     text-align: center;
     padding-top:5rem;
