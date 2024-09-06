@@ -167,7 +167,7 @@ section{
 }
 
 .profile-des h1 span{
-    color:var(--bt-color);
+    color:var(--primary-color);
 }
 
 .profile-des .role{
