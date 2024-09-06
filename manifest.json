@@ -3,7 +3,9 @@
     "short_name" : "Surya",
     "start_url" : "/index.html",
     "display" : "standalone" ,
-    "background_color" : "#fff" ,
+    "background_color" : "#fff",
+    "description": "Showcasing B.Tech projects, expertise in Artificial Intelligence and Data Science, and proficiency in web development, machine learning, and deep learning.",
+    "id" : "https://saisurya7860.github.io/Surya-s-Portfolio/",
     "theme_color" : "#000",
     "orientation" :"portrait-primary",
 
