@@ -1,0 +1,16 @@
+{
+    "name" : "Surya's Portfolio",
+    "short_name" : "Surya",
+    "start_url" : "/index.html",
+    "display" : "standalone" ,
+    "background_color" : "#fff" ,
+    "orientation" :"portrait-primary",
+
+    "icons" : [
+        {
+            "src" : "/assets/Surya-logo.png",
+            "type" : "image/png",
+            "sizes": "72 * 72"
+        }
+    ]
+}
