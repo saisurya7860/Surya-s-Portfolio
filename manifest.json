@@ -12,7 +12,7 @@
 
     "icons" : [
         {
-            "src" : "/assets/Surya-logo72x72.png",
+            "src" : "assets/Surya-logo 192x192.png",
             "type" : "image/png",
             "sizes": "72x72"
         },
