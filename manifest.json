@@ -4,13 +4,29 @@
     "start_url" : "/index.html",
     "display" : "standalone" ,
     "background_color" : "#fff" ,
+    "theme_color" : "#000",
     "orientation" :"portrait-primary",
 
     "icons" : [
         {
+            "src" : "/assets/Surya-logo72x72.png",
+            "type" : "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src" : "/assets/Surya-logo96x96.png",
+            "type" : "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src" : "/assets/Surya-logo144x144.png",
+            "type" : "image/png",
+            "sizes": "144x144"
+        },
+        {
             "src" : "/assets/Surya-logo.png",
             "type" : "image/png",
-            "sizes": "72 * 72"
+            "sizes": "192x192"
         }
     ]
 }
