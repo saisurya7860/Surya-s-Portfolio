@@ -2,8 +2,8 @@
     --bg-color:#fbfbfe;
     --primary-color:rgb(58, 137, 255);
     --primary-color1:rgba(32, 118, 247, 0.945);
+    --btn-color:#0000003c;
     --hover-btn-color:rgb(70, 117, 237);
-    --footer-color:rgb(13, 110, 253);
     --para-color:#6d6a7c;
     --border-color:#ece6e6;
     --form-color:#f0eefc;
@@ -147,7 +147,7 @@ section{
     padding: 1.5rem 2rem;
     border-radius:10px;
     border:none;
-    background-color: var(--primary-color1);
+    background-color: rgba(0, 49, 122, 0.664);
     font-size:var(--small-font);
     font-weight: var(--bold-size);
     color:#fff;
@@ -190,6 +190,14 @@ section{
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     animation:animatepic 8s ease-in-out infinite;
 } 
+
+#socio-icon{
+    color:#272727;
+}
+
+#socio-icon:hover{
+    color:var(--primary-color1);
+}
 
 @keyframes animatepic {
     0%{
@@ -568,7 +576,7 @@ footer{
 }
 
 .app-logo{
-    width:150px;
+    width:100px;
     
 }
 
