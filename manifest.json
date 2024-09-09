@@ -1,13 +1,13 @@
 {
     "name" : "Surya's Portfolio",
     "short_name" : "Surya",
-    "start_url" : "/index.html",
+    "start_url" : "/Surya-s-Portfolio/",
     "display" : "standalone" ,
-    "background_color" : "#fff",
     "description": "Showcasing B.Tech projects, expertise in Artificial Intelligence and Data Science, and proficiency in web development, machine learning, and deep learning.",
     "id": "Surya",
     "lang": "en-US",
-    "theme_color" : "#000",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
     "orientation" :"portrait-primary",
 
     "icons": [
