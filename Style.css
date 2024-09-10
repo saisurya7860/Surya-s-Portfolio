@@ -9,6 +9,7 @@
     --form-color:#f0eefc;
     --white:#fff;
     --black:#000;
+    --section-padding :3rem 1rem;
 
     /* header height */
     --header-height:3rem;
@@ -115,7 +116,7 @@ nav{
 /* Profile section */
 
 section{
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
 }
 
 .profile{
@@ -123,7 +124,7 @@ section{
     justify-content: center;
     align-items: center;
     gap:5.5rem;
-    padding: 8rem 0 0 0 ;
+    padding: var(--section-padding);
 }
 
 
@@ -222,10 +223,6 @@ section{
     font-size:var(--big-font);
 }
 
-.about{
-    min-height:70dvh;
-}
-
 .subtitle{
     color:var(--para-color);
     text-align: center;
@@ -236,8 +233,7 @@ section{
     justify-content: space-around;
     align-items: center;
     gap:4rem;
-    padding: 3rem 0.5rem;
-    min-height: 70dvh;
+    padding: var(--section-padding);
 }
 
 .about-contents-info{
@@ -287,8 +283,7 @@ section{
     align-items: center;
     justify-content: center;
     gap:3rem;
-    min-height: 40dvh;
-    padding: 2rem 1rem;
+    padding: var(--section-padding);
 }
 
 .skillcard{
@@ -297,12 +292,12 @@ section{
     border-radius: 25px;
     background-color:#fff;
     border:1px solid var(--primary-color1);
-    transition: margin ease-in-out 1s;
+    transition: transform ease-in-out 0.35s;
     cursor: pointer;
 }
 
 .skillcard:hover{
-    margin-top:10px;
+    transform: translateY(10px);
     box-shadow: 1px 1px 10px rgba(78, 144, 242, 0.575);
 }
 
@@ -342,8 +337,7 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     place-items: center;
-    padding: 2rem 0;
-    /* min-height: 70dvh;    */
+    padding: var(--section-padding);
 }
 
 .project-card{
@@ -353,7 +347,7 @@ section{
     background-color:#fff ;
     border: 1px solid var(--border-color);
     cursor: pointer;
-    transition: margin ease-in-out 0.35s;
+    transition: transform ease-in-out 0.35s;
     padding:1rem;
 }
 
@@ -426,9 +420,8 @@ section{
 .qualification-content{
     display: flex;
     flex-direction: column;
-    min-height: 50dvh;
     align-items: center;
-    padding:2rem 1rem;
+    padding:3rem 1rem;
 }
 
 .qualify-tot-datas{
@@ -485,7 +478,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding:3rem 0;
+    padding: var(--section-padding);
 }
 
 .contact-left-sec{
@@ -554,8 +547,7 @@ section{
 footer{
     background-color:var(--white);
     max-width:100%;
-    min-height: 25vh;
-    padding: 2rem 0;
+    padding: var(--section-padding);
     border:1px solid var(--border-color);
 }
 

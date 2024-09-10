@@ -79,6 +79,11 @@
     }
 }
 
+@media (min-width:992px){
+    .profile{
+        height: 100dvh;
+    }
+}
 
 @media (max-width:1024px){
 
