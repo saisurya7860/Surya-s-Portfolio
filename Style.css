@@ -292,7 +292,7 @@ section{
     border-radius: 25px;
     background-color:#fff;
     border:1px solid var(--primary-color1);
-    transition: transform ease-in-out 0.35s;
+    transition: all ease-in-out 0.35s;
     cursor: pointer;
 }
 
@@ -347,7 +347,7 @@ section{
     background-color:#fff ;
     border: 1px solid var(--border-color);
     cursor: pointer;
-    transition: transform ease-in-out 0.35s;
+    transition: all ease-in-out 0.35s;
     padding:1rem;
 }
 
