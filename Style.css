@@ -266,6 +266,7 @@ section{
     gap: 1rem;
     border:1px solid var(--border-color);
    border-radius: 20px;
+   color:var(--black);
 }
 
 .description{
@@ -337,6 +338,7 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     place-items: center;
+    gap:2rem;
     padding: var(--section-padding);
 }
 
@@ -370,8 +372,8 @@ section{
 }
 
 .project-duration{
-    color:var(--para-color);
-    font-size:var(--ex-small-font);
+    color:var(--black);
+    font-size:var(--small-font);
     line-height:30px;
 }
 
@@ -381,6 +383,12 @@ section{
     color: var(--para-color);
     text-align:start;
     line-height:23px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
 }
 
 .git-butn{

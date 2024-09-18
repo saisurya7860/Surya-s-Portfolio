@@ -17,3 +17,4 @@ document.querySelectorAll('.navlinks ul li').forEach(item => {
         nav.classList.remove('active');
     });
 });
+
