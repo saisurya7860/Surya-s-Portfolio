@@ -1,0 +1,119 @@
+:root{
+    --bg-color:#fbfbfe;
+    --primary-color:rgb(58, 137, 255);
+    --primary-color1:rgba(32, 118, 247, 0.945);
+    --btn-color:#0000003c;
+    --hover-btn-color:rgb(70, 117, 237);
+    --para-color:#6d6a7c;
+    --border-color:#ece6e6;
+    --form-color:#f0eefc;
+    --white:#fff;
+    --black:#000;
+    --section-padding :3rem 1rem;
+
+    /* header height */
+    --header-height:3rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Typography */
+
+:root{
+    --big-font:2.2rem;
+    --medium-font:1.5rem;
+    --small-font:1rem;
+    --normal-font:1.1rem;
+    --ex-small-font:0.9rem;
+    --h1-font:3rem;
+    --h2-font:2.5rem;
+    
+    /*Font-weights*/
+    --regular-size:400;
+    --medium-size:500;
+    --semi-bold-size:600;
+    --bold-size:700;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    /* background-color:var(--bg-color); */
+    background-color:#1d1d2b;  /*dark theme found*/
+    background-color:#f8f9fa;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    transition: ease-in-out 2s;
+}
+
+.project-card{
+    width:300px;
+    height:470px;
+    border-radius: 30px;
+    background-color:#6a0000 ;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all ease-in-out 0.35s;
+}
+
+.prjt-thumbnail{
+    width:268px;
+    border-radius:30px;
+    height:13rem;
+    border:1px solid var(--border-color);
+    object-position:cover;
+    transform: translate();
+}
+
+.prjt-duration{
+    color:var(--black);
+    font-size:var(--small-font);
+    line-height:30px;
+}
+
+.prjt-des{
+    padding:0.5rem 0.5rem;
+}
+
+.prjt-info{
+    font-weight: 400;
+    font-size:15px;
+    color: var(--para-color);
+    text-align:start;
+    line-height:23px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.git-butn{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.repo{
+    padding: 1rem;
+    color: #fff;
+    font-size: var(--small-font);
+    font-weight: var(--medium-size-size);
+    display: flex;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color1);
+    justify-content: center;
+    cursor: pointer;
+}
