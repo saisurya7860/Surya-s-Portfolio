@@ -18,3 +18,4 @@ document.querySelectorAll('.navlinks ul li').forEach(item => {
     });
 });
 
+// project card

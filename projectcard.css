@@ -72,7 +72,7 @@ body{
     height:13rem;
     border:1px solid var(--border-color);
     object-position:cover;
-    transform: translate();
+    translate:0.9rem 1rem;
 }
 
 .prjt-duration{
@@ -82,7 +82,7 @@ body{
 }
 
 .prjt-des{
-    padding:0.5rem 0.5rem;
+    padding:1rem 2rem;
 }
 
 .prjt-info{
@@ -102,7 +102,7 @@ body{
 .git-butn{
     display: flex;
     justify-content: center;
-    padding-top: 0.5rem;
+    padding-top: 2rem;
 }
 
 .repo{
@@ -116,4 +116,8 @@ body{
     background-color: var(--primary-color1);
     justify-content: center;
     cursor: pointer;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
