@@ -254,6 +254,7 @@ section{
 .total-cards{
     display: flex;   
     gap:0.5rem;
+    padding: 1rem;
 }
 
 .card{
@@ -339,7 +340,7 @@ section{
     align-items: center;
     place-items: center;
     gap:2rem;
-    padding: var(--section-padding);
+    padding-top: 3rem ;
 }
 
 .project-card{
@@ -371,9 +372,6 @@ section{
     padding:1rem 0.5rem;
 }
 
-.prjt-title{
-
-}
 
 .prjt-duration{
     color:var(--black);

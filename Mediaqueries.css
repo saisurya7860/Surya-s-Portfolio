@@ -170,18 +170,16 @@
     .description{
         padding:1rem;
     }
-    .total-cards{
-        width:85%;  
-    }
-
     /* Contact me */
     .contact-content{
         flex-direction: column;
         gap:4rem;
     }
-    
-  
-
+    .total-cards{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        justify-content: center;
+    }
 }
 
 
@@ -195,11 +193,7 @@
 
     /* About */
 
-    .total-cards{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        justify-content: center;
-    }
+   
 
     /* Skill section */
     .skillcard{
@@ -208,13 +202,6 @@
 
     /* Project section */
 
-    .project-card{
-        max-width:100%;
-    }
-    .prjt-thumbanil{
-        width:100%;
-        margin:0 0 1rem;
-    }
     .footer-content{
         padding:0 1rem;
     }
