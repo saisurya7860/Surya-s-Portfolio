@@ -333,7 +333,7 @@ section{
 
 /* Projects Section */
 
-.project-content{
+.project-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -359,7 +359,7 @@ section{
 }
 
 
-.project-img{
+.prjt-thumbnail{
     width:268px;
     border-radius:30px;
     height:13rem;
@@ -367,17 +367,21 @@ section{
     object-position:cover;
 }
 
-.project-des{
+.prjt-des{
     padding:1rem 0.5rem;
 }
 
-.project-duration{
+.prjt-title{
+
+}
+
+.prjt-duration{
     color:var(--black);
     font-size:var(--small-font);
     line-height:30px;
 }
 
-.project-info{
+.prjt-info{
     font-weight: 400;
     font-size:15px;
     color: var(--para-color);
@@ -397,7 +401,7 @@ section{
     padding-top: 0.5rem;
 }
 
-.gitrepo{
+.repo{
     padding: 0.8rem;
     color: #fff;
     font-size: var(--small-font);
@@ -410,7 +414,7 @@ section{
     cursor: pointer;
 }
 
-.gitrepo:hover{
+.repo:hover{
     background-color: var(--hover-btn-color);
 }
 
