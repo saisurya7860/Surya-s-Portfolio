@@ -69,12 +69,12 @@
     }
 
     /* projects section */
-    .project-content{
+    .project-container{
         grid-template-columns: 1fr 1fr;
         gap:2rem;   
     }
 
-    .project-content.project{
+    .project-container.project{
         place-self: center;
     }
 }
@@ -139,7 +139,7 @@
     }
 
     /* projectsection */
-    .project-content{
+    .project-container{
         grid-template-columns:1fr;
         gap:2rem;   
     }
@@ -211,7 +211,7 @@
     .project-card{
         max-width:100%;
     }
-    .project-img{
+    .prjt-thumbanil{
         width:100%;
         margin:0 0 1rem;
     }
