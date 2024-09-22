@@ -64,7 +64,7 @@ project.forEach(project => {
             <div class="prjt-duration">${project.duration}</div>
             <div class="prjt-info">${project.info}</div>
             <div class="git-butn">
-                <a href="${project.repo_link}" target = "_blank"><button class="repo">view</button></a>
+                <a href="${project.repo_link}" target = "_blank"><button class="repo">view code</button></a>
             </div>
         </div>
 
