@@ -25,28 +25,32 @@ const project = [
         title : "FaceIntuit",
         duration : "Aug-2024 Sept-2024" ,
         info : "Developed an website for Smart India Hackathon 2024 that documents of our ML project." ,
-        repo_link : "https://github.com/saisurya7860/SIH--FACEINTUIT"
+        repo_link : "https://faceintuit.netlify.app/",
+        code : "View Live"
     },
     {
         imgsrc : "assets/portfolio-thumbnail.png",
         title : "My Portfolio",
         duration : "May 2024 - Sep 2024" ,
         info : "Welcome to my portfolio, showcasing my projects in AI, ML, Frontend projects." ,
-        repo_link : "https://github.com/saisurya7860/Surya-s-Portfolio"
+        repo_link : "https://github.com/saisurya7860/Surya-s-Portfolio",
+         code : "View Code"
     },
     {
         imgsrc : "assets/visionSoC.png",
         title : "Vision SoC",
         duration : "March 2023 - May 2023" ,
         info : "Developed VisionSoC, an advanced image upscaling model using with Python." ,
-        repo_link : "https://github.com/saisurya7860/Vision-Soc"
+        repo_link : "https://github.com/saisurya7860/Vision-Soc",
+        code : "View Code"
     },
     {
         imgsrc : "assets/chatbot.avif",
         title : "ChatSoC",
         duration : "March 2023 - May 2023" ,
         info : "Developed 'ChatSoC' an advanced chatbot using OpenAI's API in Python." ,
-        repo_link : "https://github.com/saisurya7860/Chat-SoC"
+        repo_link : "https://github.com/saisurya7860/Chat-SoC",
+        code : "View Code"
     }
    
 ];
@@ -64,7 +68,7 @@ project.forEach(project => {
             <div class="prjt-duration">${project.duration}</div>
             <div class="prjt-info">${project.info}</div>
             <div class="git-butn">
-                <a href="${project.repo_link}" target = "_blank"><button class="repo">view code</button></a>
+                <a href="${project.repo_link}" target = "_blank"><button class="repo">${project.code}</button></a>
             </div>
         </div>
 
