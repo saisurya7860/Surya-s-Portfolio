@@ -179,8 +179,9 @@
         justify-content: center;
     }
     .skillcard{
-        width:90%;
+        width:95%;
     }
+
 }
 
 
@@ -196,6 +197,7 @@
     .footer-content{
         padding:0 1rem;
     }
+
 }
 
 

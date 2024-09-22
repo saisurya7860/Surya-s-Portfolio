@@ -289,7 +289,7 @@ section{
 
 .skillcard{
     height:230px;
-    width:370px;;
+    width:370px;
     border-radius: 25px;
     background-color:#fff;
     border:1px solid var(--primary-color1);
