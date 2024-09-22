@@ -280,11 +280,10 @@ section{
 
 /*Skills Section*/
 
-.skillcontent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:3rem;
+.skill-js-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    place-items: center;
     padding: var(--section-padding);
 }
 
@@ -337,7 +336,6 @@ section{
 .project-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
     place-items: center;
     gap:2rem;
     padding-top: 3rem ;

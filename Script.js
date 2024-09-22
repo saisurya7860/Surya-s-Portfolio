@@ -73,4 +73,119 @@ project.forEach(project => {
     prjt_container.innerHTML += card ; 
 });
 
- 
+
+
+
+// skills section 
+// skill card dynamic calling js
+
+// object creation
+const skill =[
+    {
+        role : "Frontend Developer",
+        technologies : [
+            {
+                tech1 : "HTML",
+                tech2 : "CSS",
+                tech3 : "javascript",
+                tech4 : "Bootstrap",
+                tech5 : "Git",
+                tech6 : "GitHub"
+            }
+        ],
+        icons : [
+            {
+                icon1 : "https://img.icons8.com/color/48/html-5--v1.png", 
+                icon2 : "https://img.icons8.com/color/48/css3.png", 
+                icon3 : "https://img.icons8.com/color/48/javascript.png", 
+                icon4 : "https://img.icons8.com/color-glass/48/bootstrap.png", 
+                icon5 : "https://img.icons8.com/color/48/git.png", 
+                icon6 : "https://img.icons8.com/ios-glyphs/50/github.png" ,
+            }
+        ]
+
+    },
+
+    {
+        role : "AI/ML Developer",
+        technologies : [
+            {
+                tech1 : "Python",
+                tech2 : "Data Structure",
+                tech3 : "Ml",
+                tech4 : "Statistics",
+                tech5 : "Git",
+                tech6 : "GitHub"
+            }
+        ],
+        icons : [
+            {
+                icon1 : "https://img.icons8.com/color/48/python--v1.png",
+                icon2 : "assets/data.png", 
+                icon3 : "assets/algo.png", 
+                icon4 : "assets/statistics.png", 
+                icon5 : "https://img.icons8.com/color/48/git.png", 
+                icon6 : "https://img.icons8.com/ios-glyphs/50/github.png" , 
+            }
+        ]
+
+    },
+    
+];
+
+
+
+const skill_container = document.querySelector('.skill-js-container') ;
+skill.forEach(skill => {
+    const techs = skill.technologies[0];  // Access the first (and only) object in the 'technologies' array
+    const icons = skill.icons[0];
+    const skill_card = `
+     <div class="skillcard">
+        <div class="skill-title">
+            <p>${skill.role}</p>
+        </div><!--Skill Title-->
+
+        <div class="skill-columns">
+
+            <div class="skill-stack">
+                <div class="skill">
+                    <img width="30" height="30" src="${icons.icon1}" />
+                    <div>${techs.tech1}</div>                               
+                </div>
+
+                <div class="skill">
+                    <img width="30" height="30" src="${icons.icon2}" />
+                 <div>${techs.tech2}</div>
+                </div>
+
+                <div class="skill">
+                    <img width="30" height="30" src="${icons.icon3}" />
+                    <div>${techs.tech3}</div>
+                </div>
+
+            </div> <!--skill stack cloumn1-->
+
+            <div class="skill-stack">
+                <div class="skill">
+                    <img width="30" height="30" src="${icons.icon4}" />
+                    <div>${techs.tech4}</div>
+                </div>
+
+                <div class="skill">
+                    <img width="30" height="30" src="${icons.icon5}" />
+                    <div>${techs.tech5}</div>
+                </div>
+
+                <div class="skill">
+                    <img width="30" height="30" src="${icons.icon6}" />
+                    <div>${techs.tech6}</div>   
+                </div>
+
+            </div> <!--Skill stack Column2-->
+
+        </div><!--Skill stack-->
+
+    </div> <!--Skill card-->
+    ` ;
+    skill_container.innerHTML += skill_card ;
+}); 

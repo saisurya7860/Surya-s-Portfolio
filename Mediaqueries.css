@@ -61,12 +61,10 @@
    }
 
    /* about section */
-   
-    /* sKILL SECTION */
-    .skillcontent{
-        display: flex;
-        flex-direction: column;
-    }
+   .skill-js-container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+   }
 
     /* projects section */
     .project-container{
@@ -180,6 +178,9 @@
         grid-template-columns:1fr 1fr;
         justify-content: center;
     }
+    .skillcard{
+        width:90%;
+    }
 }
 
 
@@ -188,16 +189,6 @@
     .profile-des h1{
         font-size: var(--big-font);
         font-weight: var(--bold-size);
-    }
-
-
-    /* About */
-
-   
-
-    /* Skill section */
-    .skillcard{
-        width:100%;
     }
 
     /* Project section */

@@ -1,0 +1,52 @@
+
+
+
+.skill-js-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:3rem;
+}
+
+.skillcard{
+    height:230px;
+    width:370px;;
+    border-radius: 25px;
+    background-color:#2f2f2f;
+    border:1px solid var(--primary-color1);
+    transition: all ease-in-out 0.35s;
+    cursor: pointer;
+}
+
+.skillcard:hover{
+    transform: translateY(10px);
+    box-shadow: 1px 1px 10px rgba(78, 144, 242, 0.575);
+}
+
+.skill-title{
+    text-align: center;
+    font-size: var(--normal-font);
+    padding:1rem 0;
+}
+
+.skill-columns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill-stack{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.AIML-icons{
+    width: 23px;
+}
+
+
+.skill{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
