@@ -1,3 +1,77 @@
+// About section dynamic data fetch
+const about =[
+    {
+        title : "About Me",
+        subtitle : "Introduction",
+        abt_img : "assets/about.jpg",
+        abt_info :"I am a Python developer with expertise in AI, machine learning, deep learning, and front-end development. I am eager to leverage my skills in an AI/ML Engineer role, delivering innovative solutions to complex challenges.",
+        
+        abt_card : [
+            {
+                card_href : "#qualification",
+                card_icon : "fa-award",
+                card_title : "Qualification",
+                card_subtitle : "Undergrad",
+            },
+            {
+                card_href : "#projects",
+                card_icon : "fa-suitcase",
+                card_title : "Completed",
+                card_subtitle : "3+ Projects",
+            },
+            {
+                card_href : "#contact",
+                card_icon : "fa-headphones",
+                card_title : "Support",
+                card_subtitle : "24/7",
+            }
+        ]
+        
+    },
+    
+
+];
+
+const abt_container = document.querySelector('.about-js-container');
+about.forEach(about => {
+
+    let cardHTML = '';
+    // Loop through each card in abt_card and build the HTML for each one
+    about.abt_card.forEach(abt_cards => {
+        cardHTML += `
+        <a href="${abt_cards.card_href}">  
+            <div class="card">
+                <i class="fa-solid ${abt_cards.card_icon} fa-lg"></i>
+                <p>${abt_cards.card_title}</p>
+                <div>${abt_cards.card_subtitle}</div>
+            </div>
+        </a>`;
+    }); 
+
+    const card = `
+        <div class="about-contents">
+
+            <div class="about-pic-div">
+                <img class="about-pic" src="${about.abt_img}" alt="">
+            </div>
+
+            <div class="about-contents-info">
+
+                <div class="total-cards">
+                    ${cardHTML} <!-- Inject all cards here -->
+                </div> <!-- Cards -->
+
+                <div class="description">
+                    ${about.abt_info}
+                </div> <!--description-->
+
+            </div><!--about contents info-->
+
+        </div> <!--about contents-->
+        `;
+        abt_container.innerHTML += card ;   
+});
+
 
 // project card dynamically 
 const project = [
