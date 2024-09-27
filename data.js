@@ -50,31 +50,6 @@ profile.forEach(hero =>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // About section dynamic data fetch
 const about =[
     {
