@@ -1,4 +1,4 @@
-// Profile section
+// Profile section dynamic data call
 const profile = [
     {
         git_link : "https://github.com/saisurya7860",
