@@ -1,3 +1,80 @@
+// Profile section
+const profile = [
+    {
+        git_link : "https://github.com/saisurya7860",
+        Linkedin_link : "https://www.linkedin.com/in/surya-btechi/",
+        prof_icon1 : "fa-github",
+        prof_icon2 : "fa-linkedin-in",
+        intro : "Hi, I am",
+        name : "Surya",
+        myrole : "Frontend Developer",
+        prof_des : "I am a final-year B.Tech student specializing in Artificial Intelligence and Data Science, driven by a passion for pushing the boundaries of technology. Proficient in Python, I seamlessly blend coding with creativity to solve complex problems. I am eager to contribute to cutting-edge projects, innovate with impactful solutions, and make a lasting mark in the tech industry.",
+        resume_btn : "Download CV",
+        hero_img : "assets/Hero-img.jpg",
+        resume_path : "./assets/Resume_Surya B.pdf",
+    }
+] ;
+
+const profile_container = document.querySelector('.profile-container');
+profile.forEach(hero =>{
+    const prof = `
+    <div class="profile container">
+                <div class="icon-container">
+                    <a href="${hero.git_link}" target="_blank"><i id ="socio-icon" class="fa-brands ${hero.prof_icon1} fa-lg fa-beat"></i></a>
+                    <a href="${hero.Linkedin_link}" target="_blank">   <i id ="socio-icon" class="fa-brands ${hero.prof_icon2} fa-lg fa-beat"></i></a>                    
+                </div>
+        
+                <div class="profile-des">
+                    <h1>${hero.intro}<span>${hero.name}</span></h1>
+                    <div class="role">${hero.myrole}</div>
+          
+                    <p>
+                        ${hero.prof_des}
+                    </p> 
+                    <div class="resume-btn">
+                        <button onclick = "window.open('${hero.resume_path}')">${hero.resume_btn}</button>
+                    </div>
+                </div>
+
+       
+
+                <div class="profile-pic-div">
+                    <img class="profile-pic" src="${hero.hero_img}" alt="">
+                </div>     
+        </div> 
+    `;
+    profile_container.innerHTML += prof;
+
+}) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // About section dynamic data fetch
 const about =[
     {
@@ -70,66 +147,6 @@ about.forEach(about => {
         </div> <!--about contents-->
         `;
         abt_container.innerHTML += card ;   
-});
-
-
-// project card dynamically 
-const project = [
-    {
-        imgsrc : "assets/faceintuit.png",
-        title : "FaceIntuit",
-        duration : "Aug-2024 Sept-2024" ,
-        info : "Developed an website for Smart India Hackathon 2024 that documents of our ML project." ,
-        repo_link : "https://faceintuit.netlify.app/",
-        code : "View Live"
-    },
-    {
-        imgsrc : "assets/portfolio-thumbnail.png",
-        title : "My Portfolio",
-        duration : "May 2024 - Sep 2024" ,
-        info : "Welcome to my portfolio, showcasing my projects in AI, ML, Frontend projects." ,
-        repo_link : "https://github.com/saisurya7860/Surya-s-Portfolio",
-         code : "View Code"
-    },
-    {
-        imgsrc : "assets/visionSoC.png",
-        title : "Vision SoC",
-        duration : "March 2023 - May 2023" ,
-        info : "Developed VisionSoC, an advanced image upscaling model using with Python." ,
-        repo_link : "https://github.com/saisurya7860/Vision-Soc",
-        code : "View Code"
-    },
-    {
-        imgsrc : "assets/chatbot.avif",
-        title : "ChatSoC",
-        duration : "March 2023 - May 2023" ,
-        info : "Developed 'ChatSoC' an advanced chatbot using OpenAI's API in Python." ,
-        repo_link : "https://github.com/saisurya7860/Chat-SoC",
-        code : "View Code"
-    }
-   
-];
-
-const prjt_container = document.querySelector('.project-container') ;
-project.forEach(project => {
-   const card = `
-   <div class="project-card">
-        <div>
-            <img class="prjt-thumbnail" src="${project.imgsrc}" alt="project-thumbnail">
-        </div>
-
-        <div class="prjt-des">
-            <h2 class="prjt-title">${project.title}</h2>
-            <div class="prjt-duration">${project.duration}</div>
-            <div class="prjt-info">${project.info}</div>
-            <div class="git-butn">
-                <a href="${project.repo_link}" target = "_blank"><button class="repo">${project.code}</button></a>
-            </div>
-        </div>
-
-    </div>
-    `;
-    prjt_container.innerHTML += card ; 
 });
 
 
@@ -248,3 +265,65 @@ skill.forEach(skill => {
     ` ;
     skill_container.innerHTML += skill_card ;
 }); 
+
+
+
+// project card dynamically 
+const project = [
+    {
+        imgsrc : "assets/faceintuit.png",
+        title : "FaceIntuit",
+        duration : "Aug-2024 Sept-2024" ,
+        info : "Developed an website for Smart India Hackathon 2024 that documents of our ML project." ,
+        repo_link : "https://faceintuit.netlify.app/",
+        code : "View Live"
+    },
+    {
+        imgsrc : "assets/portfolio-thumbnail.png",
+        title : "My Portfolio",
+        duration : "May 2024 - Sep 2024" ,
+        info : "Welcome to my portfolio, showcasing my projects in AI, ML, Frontend projects." ,
+        repo_link : "https://github.com/saisurya7860/Surya-s-Portfolio",
+         code : "View Code"
+    },
+    {
+        imgsrc : "assets/visionSoC.png",
+        title : "Vision SoC",
+        duration : "March 2023 - May 2023" ,
+        info : "Developed VisionSoC, an advanced image upscaling model using with Python." ,
+        repo_link : "https://github.com/saisurya7860/Vision-Soc",
+        code : "View Code"
+    },
+    {
+        imgsrc : "assets/chatbot.avif",
+        title : "ChatSoC",
+        duration : "March 2023 - May 2023" ,
+        info : "Developed 'ChatSoC' an advanced chatbot using OpenAI's API in Python." ,
+        repo_link : "https://github.com/saisurya7860/Chat-SoC",
+        code : "View Code"
+    }
+   
+];
+
+const prjt_container = document.querySelector('.project-container') ;
+project.forEach(project => {
+   const card = `
+   <div class="project-card">
+        <div>
+            <img class="prjt-thumbnail" src="${project.imgsrc}" alt="project-thumbnail">
+        </div>
+
+        <div class="prjt-des">
+            <h2 class="prjt-title">${project.title}</h2>
+            <div class="prjt-duration">${project.duration}</div>
+            <div class="prjt-info">${project.info}</div>
+            <div class="git-butn">
+                <a href="${project.repo_link}" target = "_blank"><button class="repo">${project.code}</button></a>
+            </div>
+        </div>
+
+    </div>
+    `;
+    prjt_container.innerHTML += card ; 
+});
+
