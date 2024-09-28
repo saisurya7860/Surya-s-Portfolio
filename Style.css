@@ -433,48 +433,62 @@ section{
 }
 
 .qualify-tot-datas{
-    max-width:max-content;
+    display: flex   ;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .qualfication-data{
     display:grid;
-    grid-template-columns:1fr max-content 1fr;
-    gap:1rem;
+    gap:5rem;
+}
+
+.institute-info{
+    display: flex;
+    align-items: center;
 }
 
 .qualify-institute{
-    color: #757575;
+    color:var(--para-color);
+}
+
+
+.institute-logo{
+    width:15px;
+    height:15px;
+    margin-right: 0.3rem;
 }
 
 .qualify-calender{
-    color: #a19fad;
+    color: #747475;
     font-size: var(--ex-small-font);
+    padding-top:0.5rem;
 }
 
-.qualify-gap{
-    display: flex;
-}
 
 .studies{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.4rem;
+    width:260px;
+    height:120px;
+    padding:1rem;
+    border:1px solid var(--primary-color1);
+    border-radius: 7px;
 }
 .studies div:first-child{
-    font-weight: var(--medium-size);
+    font-size: var(--medium-font);
+    font-weight: var(--semi-bold-size);
 }
 
-.qualify-rounder{
-    display:inline-block;
-    width: 15px;
-    border-radius:50%;
-    transform: translate(8px);
-    height: 15px;
-    background-color: var(--primary-color1);
+.studies:hover{
+    box-shadow: 1px 1px 10px rgba(78, 144, 242, 0.575);
 }
+
 
 .qualify-line{
-    min-height: 100px;
+    min-height: 60px;
     width: 1px;
     background-color: var(--primary-color1);
 }

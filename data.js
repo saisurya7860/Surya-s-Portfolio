@@ -25,7 +25,7 @@ profile.forEach(hero =>{
                 </div>
         
                 <div class="profile-des">
-                    <h1>${hero.intro}<span>${hero.name}</span></h1>
+                    <h1>${hero.intro}<span> ${hero.name}</span></h1>
                     <div class="role">${hero.myrole}</div>
           
                     <p>
@@ -302,3 +302,85 @@ project.forEach(project => {
     prjt_container.innerHTML += card ; 
 });
 
+
+//Qualification section dynamic data call
+
+const qualification = [
+    {
+        title : "Qualifications",
+        subtitle : "My Journey",
+        edu_icon_txt : "Education",
+        qualification_datas : [
+            {
+                present_qualiication : "B.tech   AI & DS",
+                qualify_institute : "Kathir College of Engineering",
+                qualify_calender : "2021 - present",
+                institute_logo : "assets/clg-logo.png",
+            },
+            {
+                present_qualiication : "HSC",
+                qualify_institute : "Perks Matric Hr Sec School",
+                qualify_calender : "2019 - 2021",
+                institute_logo : "assets/perks-logo.png",
+            },
+            {
+                present_qualiication : "SSLC",
+                qualify_institute : "Perks Matric Hr Sec School",
+                qualify_calender : "2018 - 2019",
+                institute_logo : "assets/perks-logo.png",
+            },
+        ]
+    
+    }
+];
+
+const qualification_container = document.querySelector('.qualification-js-container');
+qualification.forEach(qualify => {
+
+    let qualify_infos = '';
+
+    qualify.qualification_datas.forEach(infos => {
+        qualify_infos += `
+            <div class="qualfication-data ">
+
+
+                <div class="studies">
+                    <div>${infos.present_qualiication}</div>
+                        <div class="institute-info">
+                            <img src="${infos.institute_logo}" alt="school-logo" class="institute-logo">
+                            <p class="qualify-institute">${infos.qualify_institute}</p>
+                        </div>
+                    <p class="qualify-calender"><i class="fa-solid fa-calendar-days" style="color: #a19fad;"></i> ${infos.qualify_calender}</p>
+                </div>
+
+              
+            </div> 
+        `;
+    });
+
+    const qualification_datas = `
+        <div class="qualification container">
+            <h1 class="title">${qualify.title}</h1>
+            <p class="subtitle">${qualify.subtitle}</p>
+
+            <div class="edu-icon">
+                <i class="fa-solid fa-graduation-cap" style="color: #a19fad;"></i>${qualify.edu_icon_txt}
+            </div>
+
+            <div class="qualification-content">
+              
+
+                <div class="qualify-tot-datas">
+
+                    ${qualify_infos}
+                   
+                </div>
+                <!--qualify-tot-datas-->
+                
+            </div> <!--qualification-content-->
+        </div> 
+    ` ;
+
+    qualification_container.innerHTML += qualification_datas;
+
+}) ;
