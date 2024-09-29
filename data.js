@@ -304,7 +304,6 @@ project.forEach(project => {
 
 
 //Qualification section dynamic data call
-
 const qualification = [
     {
         title : "Qualifications",
@@ -384,3 +383,96 @@ qualification.forEach(qualify => {
     qualification_container.innerHTML += qualification_datas;
 
 }) ;
+
+
+const contact = [
+    {
+        contact_social_link : [
+            {
+                via_icon : "fa-brands fa-whatsapp ",
+                Via_1 : "whatsapp Me",
+                Via_1_num : "+91 9952362697",
+                href : "https://wa.me/9952362697",
+            },
+            {
+                via_icon : "fa-solid fa-envelope ",
+                Via_1 : "Email",
+                Via_1_num : "saisurya7860@gmail.com",
+                href  : "mailto:saisurya7860@gmail.com",
+            },
+            {
+                via_icon : "fa-brands fa-linkedin ",
+                Via_1 : "linkedin",
+                Via_1_num : "In/surya B",
+                href  : "https://www.linkedin.com/in/surya-btechi/"
+            },
+            {
+                via_icon : "fa-solid fa-location-dot",
+                Via_1 : "Location",
+                Via_1_num : "Coimbatore, India",
+            }
+        ],
+        
+        contact_label : [
+            {
+                label_name : "Name"
+            },
+            {
+                label_name : "Email"
+            },
+            {
+                label_name : "project"
+            },
+        ]
+    }
+] ;
+
+const contact_container = document.querySelector('.contact-container');
+
+contact.forEach(connect => {
+
+    let contact_left_sec = '';
+    connect.contact_social_link.forEach(leftsec => {
+        contact_left_sec += `
+            <a href="${leftsec.href}" target="_blank">
+                <div class="my-info">
+                    <div><i class=" ${leftsec.via_icon} fa-xl" id ="socio-icon"></i></div>
+                    <div class="contact-via">
+                        ${leftsec.Via_1}
+                        <div class="contact-num">${leftsec.Via_1_num}</div>
+                    </div>
+                </div>
+            </a>
+            
+        `
+    });
+
+    let contact_right_sec = '';
+    connect.contact_label.forEach(right_sec =>{
+        contact_right_sec += `
+         <div class="contact-textbox">
+                <label for class="contact_label">${right_sec.label_name}</label>
+                <input class="contact-input" type="text">
+         </div>
+        `;
+    });
+
+
+    const contact_whole = `
+        <div class="contact-content">
+
+                <div class="contact-left-sec">
+
+                    ${contact_left_sec}
+
+                </div> <!--contact-left-sec-->
+
+
+                <div class="contact-right-sec">
+                   ${contact_right_sec}    
+                </div> <!--contact -right-sec-->
+
+        </div> <!--Contact-content-->
+    `; 
+    contact_container.innerHTML += contact_whole;
+});
