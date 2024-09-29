@@ -415,13 +415,16 @@ const contact = [
         
         contact_label : [
             {
-                label_name : "Name"
+                label_name : "Name",
+                text :  "<input class='contact-input' type='text'>",
             },
             {
-                label_name : "Email"
+                label_name : "Email",
+                text:  "<input class='contact-input' type='text'>",
             },
             {
-                label_name : "project"
+                label_name : "project",
+                text : "<textarea class='txt-box' cols='0' rows='5'></textarea>"
             },
         ]
     }
@@ -452,7 +455,7 @@ contact.forEach(connect => {
         contact_right_sec += `
          <div class="contact-textbox">
                 <label for class="contact_label">${right_sec.label_name}</label>
-                <input class="contact-input" type="text">
+                ${right_sec.text}
          </div>
         `;
     });
