@@ -389,25 +389,25 @@ const contact = [
     {
         contact_social_link : [
             {
-                via_icon : "fa-brands fa-whatsapp ",
+                via_icon : "fa-brands fa-whatsapp fa-xl",
                 Via_1 : "whatsapp Me",
                 Via_1_num : "+91 9952362697",
                 href : "https://wa.me/9952362697",
             },
             {
-                via_icon : "fa-solid fa-envelope ",
+                via_icon : "fa-regular fa-envelope fa-xl",
                 Via_1 : "Email",
                 Via_1_num : "saisurya7860@gmail.com",
                 href  : "mailto:saisurya7860@gmail.com",
             },
             {
-                via_icon : "fa-brands fa-linkedin ",
+                via_icon : "fa-brands fa-linkedin-in fa-xl",
                 Via_1 : "linkedin",
                 Via_1_num : "In/surya B",
                 href  : "https://www.linkedin.com/in/surya-btechi/"
             },
             {
-                via_icon : "fa-solid fa-location-dot",
+                via_icon : "fa-solid fa-location-crosshairs fa-xl",
                 Via_1 : "Location",
                 Via_1_num : "Coimbatore, India",
             }
@@ -436,7 +436,7 @@ contact.forEach(connect => {
         contact_left_sec += `
             <a href="${leftsec.href}" target="_blank">
                 <div class="my-info">
-                    <div><i class=" ${leftsec.via_icon} fa-xl" id ="socio-icon"></i></div>
+                    <div><i class=" ${leftsec.via_icon} " id ="socio-icon"></i></div>
                     <div class="contact-via">
                         ${leftsec.Via_1}
                         <div class="contact-num">${leftsec.Via_1_num}</div>
