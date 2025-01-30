@@ -11,7 +11,7 @@ const profile = [
         prof_des : "I am a final-year B.Tech student specializing in Artificial Intelligence and Data Science, driven by a passion for pushing the boundaries of technology. Proficient in Python, I seamlessly blend coding with creativity to solve complex problems. I am eager to contribute to cutting-edge projects, innovate with impactful solutions, and make a lasting mark in the tech industry.",
         resume_btn : "Download CV",
         hero_img : "assets/Hero-img.jpg",
-        resume_path : "./assets/Resume_Surya B.pdf",
+        resume_path : "./assets/Resume_Surya_JAN25_.pdf",
     }
 ] ;
 
