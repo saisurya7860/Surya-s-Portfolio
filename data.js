@@ -10,7 +10,7 @@ const profile = [
         myrole : "Frontend Developer",
         prof_des : "I am a final-year B.Tech student specializing in Artificial Intelligence and Data Science, driven by a passion for pushing the boundaries of technology. Proficient in Python, I seamlessly blend coding with creativity to solve complex problems. I am eager to contribute to cutting-edge projects, innovate with impactful solutions, and make a lasting mark in the tech industry.",
         resume_btn : "Download CV",
-        hero_img : "assets/Hero-img.jpg",
+        hero_img : "assets/Surya_pic5.jpg",
         resume_path : "./assets/Surya Resume_ overleaf.pdf",
     }
 ] ;
@@ -56,7 +56,7 @@ const about =[
         title : "About Me",
         subtitle : "Introduction",
         abt_img : "assets/about.jpg",
-        abt_info :"I am a Python developer with expertise in AI, machine learning, deep learning, and front-end development. I am eager to leverage my skills in an AI/ML Engineer role, delivering innovative solutions to complex challenges.",
+        abt_info :"“I’m a Frontend Developer with a strong foundation in Artificial Intelligence, Machine Learning, Python, and Data Structures & Algorithms. I enjoy blending design with logic to build user-friendly interfaces while exploring intelligent solutions through modern technologies.",
         
         abt_card : [
             {
@@ -113,7 +113,7 @@ about.forEach(about => {
                     ${cardHTML} <!-- Inject all cards here -->
                 </div> <!-- Cards -->
 
-                <div class="description">
+                <div class="description text-justify">
                     ${about.abt_info}
                 </div> <!--description-->
 
@@ -131,117 +131,83 @@ about.forEach(about => {
 // skill card dynamic calling js
 
 // object creation
-const skill =[
-    {
-        role : "Frontend Developer",
-        technologies : [
-            {
-                tech1 : "HTML",
-                tech2 : "CSS",
-                tech3 : "javascript",
-                tech4 : "Bootstrap",
-                tech5 : "Git",
-                tech6 : "GitHub"
-            }
-        ],
-        icons : [
-            {
-                icon1 : "https://img.icons8.com/color/48/html-5--v1.png", 
-                icon2 : "https://img.icons8.com/color/48/css3.png", 
-                icon3 : "https://img.icons8.com/color/48/javascript.png", 
-                icon4 : "https://img.icons8.com/color-glass/48/bootstrap.png", 
-                icon5 : "https://img.icons8.com/color/48/git.png", 
-                icon6 : "https://img.icons8.com/ios-glyphs/50/github.png" ,
-            }
-        ]
-
-    },
-
-    {
-        role : "AI/ML Developer",
-        technologies : [
-            {
-                tech1 : "Python",
-                tech2 : "Data Structure",
-                tech3 : "Ml",
-                tech4 : "Statistics",
-                tech5 : "Git",
-                tech6 : "GitHub"
-            }
-        ],
-        icons : [
-            {
-                icon1 : "https://img.icons8.com/color/48/python--v1.png",
-                icon2 : "assets/data.png", 
-                icon3 : "assets/algo.png", 
-                icon4 : "assets/statistics.png", 
-                icon5 : "https://img.icons8.com/color/48/git.png", 
-                icon6 : "https://img.icons8.com/ios-glyphs/50/github.png" , 
-            }
-        ]
-
-    },
-    
+const skill = [
+  {
+    Skill: "Frontend",
+    skillicons: [
+      {
+        iconslft: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000",
+        iconsrht: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+      },
+      {
+        iconslft: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
+        iconsrht: "https://img.icons8.com/?size=100&id=PXTY4q2Sq2lG&format=png&color=000000",
+      },
+      {
+        iconslft: "https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png&color=000000",
+        iconsrht: "https://img.icons8.com/?size=100&id=x7XMNGh2vdqA&format=png&color=000000",
+      },
+      {
+        iconslft: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000",
+        iconsrht: "https://img.icons8.com/?size=100&id=YsPdguLCFOMH&format=png&color=000000",
+      }
+    ],
+    Technames: ["React", "HTML", "CSS", "Javascript","BS ","TailWind","Vite","Netlify"],
+  },
+  {
+    Skill: "Others",
+    skillicons: [
+      {
+        iconslft: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
+        iconsrht: "https://img.icons8.com/?size=100&id=s35S45z4txOJ&format=png&color=000000",
+      },
+      {
+        iconslft: "https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000",
+        iconsrht: "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000",
+      },
+      {
+        iconslft: "https://img.icons8.com/?size=100&id=ibuQHJm1Jtzg&format=png&color=000000",
+        iconsrht: "https://img.icons8.com/?size=100&id=xSkewUSqtErH&format=png&color=000000"
+      },
+      {
+        iconslft: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
+        iconsrht: "https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"
+      }
+    ],
+    Technames: ["Python", "DSA", "SQL", "TensorFlow","ML","numpy","git","github"],
+  },
 ];
 
+const skill_container = document.querySelector('.skill-js-container');
 
+skill.forEach((item) => {
+  let iconRow = '';
 
-const skill_container = document.querySelector('.skill-js-container') ;
-skill.forEach(skill => {
-    const techs = skill.technologies[0];  // Access the first (and only) object in the 'technologies' array
-    const icons = skill.icons[0];
-    const skill_card = `
-     <div class="skillcard">
-        <div class="skill-title">
-            <p>${skill.role}</p>
-        </div><!--Skill Title-->
+  item.skillicons.forEach((icon, i) => {
+    const techNameLft = item.Technames[i * 2] || '';
+    const techNameRht = item.Technames[i * 2 + 1] || '';
 
-        <div class="skill-columns">
+    iconRow += `
+      <div class="flex w-full items-center justify-between space-y-0.5 mt-2">
+        <div class=" w-full flex sm:flex-row place-items-center flex-col space-x-2">
+          <img src="${icon.iconslft}" alt="icon" class="w-10 h-10" />
+          <p class="font-medium ">${techNameLft}</p>
+        </div>
+        <div class=" w-full flex sm:flex-row flex-col place-items-center space-x-2">
+          <img src="${icon.iconsrht}" alt="icon" class="w-10 h-10" />
+          <p class="font-medium">${techNameRht}</p>
+        </div>
+      </div>
+    `;
+  });
 
-            <div class="skill-stack">
-                <div class="skill">
-                    <img width="30" height="30" src="${icons.icon1}" />
-                    <div>${techs.tech1}</div>                               
-                </div>
-
-                <div class="skill">
-                    <img width="30" height="30" src="${icons.icon2}" />
-                 <div>${techs.tech2}</div>
-                </div>
-
-                <div class="skill">
-                    <img width="30" height="30" src="${icons.icon3}" />
-                    <div>${techs.tech3}</div>
-                </div>
-
-            </div> <!--skill stack cloumn1-->
-
-            <div class="skill-stack">
-                <div class="skill">
-                    <img width="30" height="30" src="${icons.icon4}" />
-                    <div>${techs.tech4}</div>
-                </div>
-
-                <div class="skill">
-                    <img width="30" height="30" src="${icons.icon5}" />
-                    <div>${techs.tech5}</div>
-                </div>
-
-                <div class="skill">
-                    <img width="30" height="30" src="${icons.icon6}" />
-                    <div>${techs.tech6}</div>   
-                </div>
-
-            </div> <!--Skill stack Column2-->
-
-        </div><!--Skill stack-->
-
-    </div> <!--Skill card-->
-    ` ;
-    skill_container.innerHTML += skill_card ;
-}); 
-
-
+  skill_container.innerHTML += `
+    <div class=" w-full skill_card p-2 sm:w-2/3 bg-white rounded-xl cursor-pointer border border-blue-400 ease-in-out hover:translate-y-1 transition-all  duration-300 mb-4">
+      <h1 class="text-gray-900 text-center text-2xl font-medium">${item.Skill}</h1>
+      ${iconRow}
+    </div>
+  `;
+});
 
 // project card dynamically 
 const project = [
@@ -297,11 +263,11 @@ project.forEach(project => {
         </div>
 
         <div class="prjt-des">
-            <h2 class="prjt-title">${project.title}</h2>
+            <h2 class="prjt-title font-bold text-2xl">${project.title}</h2>
             <div class="prjt-duration">${project.duration}</div>
             <div class="prjt-info">${project.info}</div>
             <div class="git-butn">
-                <a href="${project.repo_link}" target = "_blank"><button class="repo">${project.code}</button></a>
+                <a href="${project.repo_link}" target = "_blank"><button class="repo mt-3">${project.code}</button></a>
             </div>
         </div>
 
