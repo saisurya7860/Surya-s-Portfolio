@@ -11,7 +11,7 @@ const profile = [
         prof_des : "I am a final-year B.Tech student specializing in Artificial Intelligence and Data Science, driven by a passion for pushing the boundaries of technology. Proficient in Python, I seamlessly blend coding with creativity to solve complex problems. I am eager to contribute to cutting-edge projects, innovate with impactful solutions, and make a lasting mark in the tech industry.",
         resume_btn : "Download CV",
         hero_img : "assets/Hero-img.jpg",
-        resume_path : "./assets/Resume_Surya_JAN25_.pdf",
+        resume_path : "./assets/Surya Resume_ overleaf.pdf",
     }
 ] ;
 
@@ -246,9 +246,17 @@ skill.forEach(skill => {
 // project card dynamically 
 const project = [
     {
+        imgsrc : "assets/Signspell.png",
+        title : "SignSpell",
+        duration : "Mar 2025 - Present" ,
+        info : "Developed a React web app SignSpell that translates speech into animated sign language." ,
+        repo_link : "https://saisurya7860.github.io/SignSpell/#/",
+        code : "View Live"
+    },
+    {
         imgsrc : "assets/faceintuit.png",
         title : "FaceIntuit",
-        duration : "Aug-2024 Sept-2024" ,
+        duration : "Aug 2024 - Sept 2024" ,
         info : "Developed an website for Smart India Hackathon 2024 that documents of our ML project." ,
         repo_link : "https://faceintuit.netlify.app/",
         code : "View Live"
@@ -313,7 +321,7 @@ const qualification = [
             {
                 present_qualiication : "B.tech   AI & DS",
                 qualify_institute : "Kathir College of Engineering",
-                qualify_calender : "2021 - present",
+                qualify_calender : "2021 - 2025",
                 institute_logo : "assets/clg-logo.png",
             },
             {
