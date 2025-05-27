@@ -257,7 +257,7 @@ const project = [
 const prjt_container = document.querySelector('.project-container') ;
 project.forEach(project => {
    const card = `
-   <div class="project-card">
+   <div class="project-card border border-blue-400 ease-in-out">
         <div>
             <img class="prjt-thumbnail" src="${project.imgsrc}" alt="project-thumbnail">
         </div>
