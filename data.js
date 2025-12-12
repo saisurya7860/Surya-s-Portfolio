@@ -8,7 +8,7 @@ const profile = [
         intro : "Hi, I am",
         name : "Surya",
         myrole : "Frontend Developer",
-        prof_des : "I’m a Fullstack Developer with a strong foundation in Artificial Intelligence, Machine Learning, Python, and Data Structures & Algorithms. I enjoy blending clean design with logical problem-solving to build scalable, user-friendly applications. With hands-on experience in React, Next.js, Vite, Tailwind CSS, FastAPI, Flask, Prisma, SQL, and MongoDB, I develop modern end-to-end solutions while exploring intelligent features powered by AI and emerging technologies.",
+        prof_des : "I’m a Fullstack Developer with a strong foundation in Artificial Intelligence, Machine Learning, Python, and Data Structures & Algorithms. With hands-on experience in React, Vite, Tailwind CSS, FastAPI, Flask, Prisma, SQL, and MongoDB, I develop modern end-to-end solutions while exploring intelligent features powered by AI and emerging technologies.",
         resume_btn : "Download CV",
         hero_img : "assets/Surya_pic5.jpg",
         resume_path : "./assets/1.Surya__Resume.pdf",
