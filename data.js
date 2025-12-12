@@ -8,7 +8,7 @@ const profile = [
         intro : "Hi, I am",
         name : "Surya",
         myrole : "Frontend Developer",
-        prof_des : "I am a final-year B.Tech student specializing in Artificial Intelligence and Data Science, driven by a passion for pushing the boundaries of technology. Proficient in Python, I seamlessly blend coding with creativity to solve complex problems. I am eager to contribute to cutting-edge projects, innovate with impactful solutions, and make a lasting mark in the tech industry.",
+        prof_des : "I’m a Fullstack Developer with a strong foundation in Artificial Intelligence, Machine Learning, Python, and Data Structures & Algorithms. I enjoy blending clean design with logical problem-solving to build scalable, user-friendly applications. With hands-on experience in React, Next.js, Vite, Tailwind CSS, FastAPI, Flask, Prisma, SQL, and MongoDB, I develop modern end-to-end solutions while exploring intelligent features powered by AI and emerging technologies.",
         resume_btn : "Download CV",
         hero_img : "assets/Surya_pic5.jpg",
         resume_path : "./assets/1.Surya__Resume.pdf",
@@ -56,7 +56,7 @@ const about =[
         title : "About Me",
         subtitle : "Introduction",
         abt_img : "assets/about.jpg",
-        abt_info :"“I’m a Frontend Developer with a strong foundation in Artificial Intelligence, Machine Learning, Python, and Data Structures & Algorithms. I enjoy blending design with logic to build user-friendly interfaces while exploring intelligent solutions through modern technologies.",
+        abt_info :"Fullstack Developer skilled in React, Vite, Tailwind CSS, and backend development using Node.js, FastAPI, Flask, Prisma, SQL, and MongoDB. Strong foundation in AI/ML, Python, and DSA, enabling me to build scalable and intelligent web applications.",
         
         abt_card : [
             {
